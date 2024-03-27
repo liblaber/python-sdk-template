@@ -1,6 +1,6 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 setup(
    name='petstore-pypi',
    version='0.0.1',
-   packages=['pipenv',],
+   packages=find_packages(),
 )
