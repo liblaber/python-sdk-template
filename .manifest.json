@@ -1,0 +1,123 @@
+{
+  "liblabVersion": "2.0.22",
+  "date": "2024-03-27T22:18:46.352Z",
+  "config": {
+    "usesFormData": false,
+    "authentication": {
+      "access": {
+        "prefix": "Bearer"
+      }
+    },
+    "environmentVariables": [],
+    "fileOutput": "/tmp",
+    "inferServiceNames": false,
+    "httpLibrary": {
+      "name": "axios",
+      "packages": {
+        "axios": "^1.6.8"
+      },
+      "languages": ["typescript"]
+    },
+    "auth": ["bearer"],
+    "sdkName": "petstore-sdk",
+    "sdkVersion": "1.0.0",
+    "retry": {
+      "enabled": true,
+      "maxAttempts": 3,
+      "retryDelay": 150
+    },
+    "multiTenant": true,
+    "customQueries": {
+      "paths": [],
+      "rawQueries": [],
+      "queriesData": []
+    },
+    "generateEnv": true,
+    "injectedModels": [],
+    "includeWatermark": false,
+    "license": {
+      "type": "MIT"
+    },
+    "ignoreFiles": [],
+    "deliveryMethod": "zip",
+    "apiId": 604,
+    "liblabVersion": "2",
+    "deliveryMethods": ["zip"],
+    "languages": ["python"],
+    "apiVersion": "1.0.0",
+    "apiName": "petstore-api",
+    "specFilePath": "petstore.json",
+    "createDocs": false,
+    "languageOptions": {
+      "python": {
+        "alwaysInitializeOptionals": false,
+        "pypiPackageName": "petstore-pypi",
+        "githubRepoName": "python-sdk-template",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      }
+    },
+    "publishing": {
+      "githubOrg": "liblaber"
+    },
+    "includeOptionalSnippetParameters": true,
+    "devContainer": false,
+    "responseHeaders": false,
+    "specUrl": "https://prod-liblab-api-stack-specs.s3.us-east-1.amazonaws.com/604/open-api-spec.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA5P3QKKDKGVNIJ2H7%2F20240327%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240327T221846Z&X-Amz-Expires=43200&X-Amz-Signature=bcee3e3cf0bededd83955ab03eac53b19913ffeed978b8da8cadb6ab721e5cb7&X-Amz-SignedHeaders=host&x-id=GetObject",
+    "alwaysInitializeOptionals": false,
+    "pypiPackageName": "petstore-pypi",
+    "githubRepoName": "python-sdk-template",
+    "language": "python",
+    "hooks": {
+      "enabled": false,
+      "sourceDir": ""
+    }
+  },
+  "files": [
+    "src/petstore_sdk/models/base.py",
+    "src/petstore_sdk/models/utils/json_map.py",
+    "src/petstore_sdk/models/__init__.py",
+    "src/petstore_sdk/services/__init__.py",
+    "src/petstore_sdk/__init__.py",
+    "src/petstore_sdk/net/__init__.py",
+    "src/petstore_sdk/net/headers/__init__.py",
+    "src/petstore_sdk/net/transport/__init__.py",
+    "src/petstore_sdk/hooks/__init__.py",
+    "src/petstore_sdk/net/environment/__init__.py",
+    "src/petstore_sdk/net/request_chain/__init__.py",
+    "src/petstore_sdk/net/request_chain/handlers/__init__.py",
+    "src/petstore_sdk/net/transport/request.py",
+    "src/petstore_sdk/net/transport/response.py",
+    "src/petstore_sdk/net/transport/request_error.py",
+    "src/petstore_sdk/sdk.py",
+    "src/petstore_sdk/net/transport/serializer.py",
+    "src/petstore_sdk/services/utils/validator.py",
+    "src/petstore_sdk/services/utils/base_service.py",
+    "pyproject.toml",
+    ".gitignore",
+    "src/petstore_sdk/models/utils/cast_models.py",
+    "src/petstore_sdk/net/transport/utils.py",
+    "src/petstore_sdk/hooks/hook.py",
+    "install.sh",
+    "install.cmd",
+    "examples/install.sh",
+    "examples/install.cmd",
+    "src/petstore_sdk/net/headers/base_header.py",
+    "src/petstore_sdk/net/headers/access_token_auth.py",
+    "src/petstore_sdk/net/environment/environment.py",
+    "src/petstore_sdk/net/request_chain/request_chain.py",
+    "src/petstore_sdk/net/request_chain/handlers/base_handler.py",
+    "src/petstore_sdk/net/request_chain/handlers/http_handler.py",
+    "src/petstore_sdk/net/request_chain/handlers/hook_handler.py",
+    "src/petstore_sdk/net/request_chain/handlers/retry_handler.py",
+    "examples/sample.py",
+    ".env.example",
+    "/examples/.env.example",
+    "src/petstore_sdk/services/utils/default_headers.py",
+    "./LICENSE",
+    "src/petstore_sdk/models/pet.py",
+    "src/petstore_sdk/services/pets.py",
+    "README.md"
+  ]
+}
