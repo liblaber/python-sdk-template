@@ -19,6 +19,10 @@ This repository contains the following:
 
 2. Set the PyPI Registry's account Username as an actions secret `PYPI_USERNAME` and set the PyPI Registry's API token as an actions secret `PYPI_PASSWORD` in the target SDK Repo.
 
-3. Create a release in the target SDK Repo.
+3. Run the GitHub Action `Generate SDKs using liblab` in the Control Repo that builds the SDK, and raises a PR against this target SDK Repo.
 
-4. The GitHub Action `Publish to PyPI Registry` in the target SDK Repo publishes the package to PyPI registry.
+4. Review and merge the PR.
+
+5. Create a release in the target SDK Repo.
+
+6. The GitHub Action `Publish to PyPI Registry` in the target SDK Repo publishes the package to PyPI registry.
