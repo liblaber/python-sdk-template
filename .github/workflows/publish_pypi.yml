@@ -1,4 +1,4 @@
-name: publish-pypi
+name: Publish to PyPI Registry
 
 on:
   release:
@@ -16,5 +16,5 @@ jobs:
       with:
         python_version: '3.9.16'
       env:
-        TWINE_PASSWORD: ${{ secrets.DMUSR_PASSWORD }}
-        TWINE_USERNAME: ${{ secrets.DMUSR_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
