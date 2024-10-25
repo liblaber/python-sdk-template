@@ -1,0 +1,31 @@
+image: python:3.9
+
+pipelines:
+  tags:
+    '*':
+      - step:
+          name: Pre-check for Environment Variables
+          script:
+            - echo "Checking if necessary environment variables are defined..."
+            - |
+              if [ -z "$PYPI_TOKEN" ]; then
+                echo "Error: PYPI_TOKEN is not defined"
+                exit 1
+              fi
+      - step:
+          name: Deploy Python Package
+          caches:
+            - pip
+          script:
+            - pip install --upgrade pip
+            - pip install build twine
+
+            - python -m build
+
+            - TWINE_PASSWORD=$PYPI_TOKEN TWINE_USERNAME=__token__ python -m twine upload dist/*
+          needs:
+            - step: Pre-check for Environment Variables
+
+definitions:
+  caches:
+    pip: ~/.cache/pip
